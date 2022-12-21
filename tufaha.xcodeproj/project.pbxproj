@@ -14,6 +14,10 @@
 		7B5E5F3029532FB60008CB6C /* tufahaTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F2F29532FB60008CB6C /* tufahaTests.swift */; };
 		7B5E5F3A29532FB60008CB6C /* tufahaUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F3929532FB60008CB6C /* tufahaUITests.swift */; };
 		7B5E5F3C29532FB60008CB6C /* tufahaUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F3B29532FB60008CB6C /* tufahaUITestsLaunchTests.swift */; };
+		7B5E5F4A295334BD0008CB6C /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F49295334BD0008CB6C /* ContentViewModel.swift */; };
+		7B5E5F4E2953353D0008CB6C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F4D2953353D0008CB6C /* LoadingView.swift */; };
+		7B5E5F50295335860008CB6C /* LoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F4F295335860008CB6C /* LoadingDialog.swift */; };
+		7B5E5F52295335F10008CB6C /* AlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F51295335F10008CB6C /* AlertDialog.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -45,6 +49,10 @@
 		7B5E5F3529532FB60008CB6C /* tufahaUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = tufahaUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		7B5E5F3929532FB60008CB6C /* tufahaUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tufahaUITests.swift; sourceTree = "<group>"; };
 		7B5E5F3B29532FB60008CB6C /* tufahaUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = tufahaUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		7B5E5F49295334BD0008CB6C /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		7B5E5F4D2953353D0008CB6C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
+		7B5E5F4F295335860008CB6C /* LoadingDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDialog.swift; sourceTree = "<group>"; };
+		7B5E5F51295335F10008CB6C /* AlertDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDialog.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -95,8 +103,8 @@
 		7B5E5F1C29532FB40008CB6C /* tufaha */ = {
 			isa = PBXGroup;
 			children = (
+				7B5E5F48295334850008CB6C /* ui */,
 				7B5E5F1D29532FB40008CB6C /* tufahaApp.swift */,
-				7B5E5F1F29532FB40008CB6C /* ContentView.swift */,
 				7B5E5F2129532FB60008CB6C /* Assets.xcassets */,
 				7B5E5F2329532FB60008CB6C /* tufaha.entitlements */,
 				7B5E5F2429532FB60008CB6C /* Preview Content */,
@@ -127,6 +135,42 @@
 				7B5E5F3B29532FB60008CB6C /* tufahaUITestsLaunchTests.swift */,
 			);
 			path = tufahaUITests;
+			sourceTree = "<group>";
+		};
+		7B5E5F48295334850008CB6C /* ui */ = {
+			isa = PBXGroup;
+			children = (
+				7B5E5F54295336820008CB6C /* screens */,
+				7B5E5F4C295335150008CB6C /* dialogs */,
+				7B5E5F4B295334F60008CB6C /* views */,
+				7B5E5F1F29532FB40008CB6C /* ContentView.swift */,
+				7B5E5F49295334BD0008CB6C /* ContentViewModel.swift */,
+			);
+			path = ui;
+			sourceTree = "<group>";
+		};
+		7B5E5F4B295334F60008CB6C /* views */ = {
+			isa = PBXGroup;
+			children = (
+				7B5E5F4D2953353D0008CB6C /* LoadingView.swift */,
+			);
+			path = views;
+			sourceTree = "<group>";
+		};
+		7B5E5F4C295335150008CB6C /* dialogs */ = {
+			isa = PBXGroup;
+			children = (
+				7B5E5F4F295335860008CB6C /* LoadingDialog.swift */,
+				7B5E5F51295335F10008CB6C /* AlertDialog.swift */,
+			);
+			path = dialogs;
+			sourceTree = "<group>";
+		};
+		7B5E5F54295336820008CB6C /* screens */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = screens;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -259,8 +303,12 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5E5F52295335F10008CB6C /* AlertDialog.swift in Sources */,
 				7B5E5F2029532FB40008CB6C /* ContentView.swift in Sources */,
+				7B5E5F50295335860008CB6C /* LoadingDialog.swift in Sources */,
+				7B5E5F4E2953353D0008CB6C /* LoadingView.swift in Sources */,
 				7B5E5F1E29532FB40008CB6C /* tufahaApp.swift in Sources */,
+				7B5E5F4A295334BD0008CB6C /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

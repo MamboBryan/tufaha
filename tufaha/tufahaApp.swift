@@ -9,9 +9,12 @@ import SwiftUI
 
 @main
 struct tufahaApp: App {
+    
+    @StateObject var viewModel = ContentViewModel()
+    
     var body: some Scene {
         WindowGroup {
-            ContentView()
+            ContentView().environmentObject(viewModel)
         }
     }
 }
