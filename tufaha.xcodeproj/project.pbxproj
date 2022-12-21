@@ -18,6 +18,12 @@
 		7B5E5F4E2953353D0008CB6C /* LoadingView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F4D2953353D0008CB6C /* LoadingView.swift */; };
 		7B5E5F50295335860008CB6C /* LoadingDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F4F295335860008CB6C /* LoadingDialog.swift */; };
 		7B5E5F52295335F10008CB6C /* AlertDialog.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F51295335F10008CB6C /* AlertDialog.swift */; };
+		7B5E5F56295338EC0008CB6C /* MainScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F55295338EC0008CB6C /* MainScreen.swift */; };
+		7B5E5F592953396A0008CB6C /* AuthenticationScreen.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F582953396A0008CB6C /* AuthenticationScreen.swift */; };
+		7B5E5F5B295339A00008CB6C /* OnboardingSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F5A295339A00008CB6C /* OnboardingSection.swift */; };
+		7B5E5F5D295339B90008CB6C /* SignInSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F5C295339B90008CB6C /* SignInSection.swift */; };
+		7B5E5F5F295339D30008CB6C /* SignUpSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F5E295339D30008CB6C /* SignUpSection.swift */; };
+		7B5E5F6329533A580008CB6C /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7B5E5F6229533A580008CB6C /* AuthenticationViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +59,12 @@
 		7B5E5F4D2953353D0008CB6C /* LoadingView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingView.swift; sourceTree = "<group>"; };
 		7B5E5F4F295335860008CB6C /* LoadingDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingDialog.swift; sourceTree = "<group>"; };
 		7B5E5F51295335F10008CB6C /* AlertDialog.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AlertDialog.swift; sourceTree = "<group>"; };
+		7B5E5F55295338EC0008CB6C /* MainScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainScreen.swift; sourceTree = "<group>"; };
+		7B5E5F582953396A0008CB6C /* AuthenticationScreen.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationScreen.swift; sourceTree = "<group>"; };
+		7B5E5F5A295339A00008CB6C /* OnboardingSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OnboardingSection.swift; sourceTree = "<group>"; };
+		7B5E5F5C295339B90008CB6C /* SignInSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignInSection.swift; sourceTree = "<group>"; };
+		7B5E5F5E295339D30008CB6C /* SignUpSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignUpSection.swift; sourceTree = "<group>"; };
+		7B5E5F6229533A580008CB6C /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -169,8 +181,22 @@
 		7B5E5F54295336820008CB6C /* screens */ = {
 			isa = PBXGroup;
 			children = (
+				7B5E5F57295339540008CB6C /* authentication */,
+				7B5E5F55295338EC0008CB6C /* MainScreen.swift */,
 			);
 			path = screens;
+			sourceTree = "<group>";
+		};
+		7B5E5F57295339540008CB6C /* authentication */ = {
+			isa = PBXGroup;
+			children = (
+				7B5E5F582953396A0008CB6C /* AuthenticationScreen.swift */,
+				7B5E5F5A295339A00008CB6C /* OnboardingSection.swift */,
+				7B5E5F5C295339B90008CB6C /* SignInSection.swift */,
+				7B5E5F5E295339D30008CB6C /* SignUpSection.swift */,
+				7B5E5F6229533A580008CB6C /* AuthenticationViewModel.swift */,
+			);
+			path = authentication;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -303,10 +329,16 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7B5E5F6329533A580008CB6C /* AuthenticationViewModel.swift in Sources */,
 				7B5E5F52295335F10008CB6C /* AlertDialog.swift in Sources */,
+				7B5E5F5D295339B90008CB6C /* SignInSection.swift in Sources */,
+				7B5E5F56295338EC0008CB6C /* MainScreen.swift in Sources */,
 				7B5E5F2029532FB40008CB6C /* ContentView.swift in Sources */,
 				7B5E5F50295335860008CB6C /* LoadingDialog.swift in Sources */,
 				7B5E5F4E2953353D0008CB6C /* LoadingView.swift in Sources */,
+				7B5E5F5B295339A00008CB6C /* OnboardingSection.swift in Sources */,
+				7B5E5F592953396A0008CB6C /* AuthenticationScreen.swift in Sources */,
+				7B5E5F5F295339D30008CB6C /* SignUpSection.swift in Sources */,
 				7B5E5F1E29532FB40008CB6C /* tufahaApp.swift in Sources */,
 				7B5E5F4A295334BD0008CB6C /* ContentViewModel.swift in Sources */,
 			);

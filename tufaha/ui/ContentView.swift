@@ -13,12 +13,18 @@ struct ContentView: View {
     
     var body: some View {
         
-        if (viewModel.loading.show) {
-            LoadingDialog(data: viewModel.loading)
-        }
-        
-        if (viewModel.alert.show) {
-            AlertDialog(alert: viewModel.alert.alert)
+        ZStack {
+            
+            MainScreen()
+            
+            if (viewModel.loading.show) {
+                LoadingDialog(data: viewModel.loading)
+            }
+            
+            if (viewModel.alert.show) {
+                AlertDialog(alert: viewModel.alert.alert)
+            }
+            
         }
         
     }
