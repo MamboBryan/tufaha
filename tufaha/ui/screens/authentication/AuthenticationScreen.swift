@@ -9,7 +9,7 @@ import SwiftUI
 
 struct AuthenticationScreen: View {
     
-    @ObservedObject private var authenticationViewModel : AuthenticationViewModel = AuthenticationViewModel()
+    @StateObject private var authenticationViewModel : AuthenticationViewModel = AuthenticationViewModel()
     
     var body: some View {
         
