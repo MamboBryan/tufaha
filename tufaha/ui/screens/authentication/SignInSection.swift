@@ -27,11 +27,15 @@ struct SignInSection: View {
     
     private func signIn(){
         mainViewModel.showLoading()
-        viewModel.doTask { result in
+        viewModel.doTask { (authenticated, message) in
             mainViewModel.hideLoading()
+            
             mainViewModel.showAlert(alert: AlertData(show:true, alert: AppAlert.SUCCESS(
                 AppAlert.Content(title: "Success", description: "Signed In Okay")
             )))
+            if(authenticated){
+                mainViewModel.signedIn()
+            }
         }
     }
     
